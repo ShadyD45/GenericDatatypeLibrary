@@ -6,9 +6,8 @@ using namespace std;
 
 template <class T>
 struct GENNODE_SLL
-{
-	//T* pData;			
-	T data;				// To store primitive datatypes (But is able to store userdefined datatypes too)
+{		
+	T data;
 	struct GENNODE_SLL<T> *next;
 };
 
@@ -37,7 +36,6 @@ class SinglyLL
 template <class T>
 struct GENNODE_SCLL
 {
-	//T* pData;
 	T data;
 	struct GENNODE_SCLL<T> *next;
 };
@@ -75,8 +73,7 @@ template <class T>
 struct GENNODE_DLL
 {
 	struct GENNODE_DLL<T> *prev;
-	//T* pData;		// Pointer to user defined datatypes 
-	T data;			// To store primitive datatypes
+	T data;			
 	struct GENNODE_DLL<T> *next;	
 };
 
@@ -107,7 +104,6 @@ template <class T>
 struct GENNODE_DCLL
 {
 	struct GENNODE_DCLL<T> *prev;
-	//T* pData;
 	T data;
 	struct GENNODE_DCLL<T> *next;
 };
@@ -142,7 +138,6 @@ class DoublyCLL
 template <class T>
 struct GENNODE_STACK
 {
-	//T* pData;
 	T data;
 	struct GENNODE_STACK<T> *next;
 };
@@ -170,7 +165,6 @@ class Stack
 template <class T>
 struct GENNODE_QUEUE
 {
-	//T* pData;
 	T data;
 	struct GENNODE_QUEUE *next;
 };

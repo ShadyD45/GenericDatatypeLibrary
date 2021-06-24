@@ -20,7 +20,7 @@ template <class T>
 SinglyLL<T> :: ~SinglyLL()
 {
 	struct GENNODE_SLL<T> *temp = NULL;
-	//cout<<"Inside destructor\n\n";
+	
 	while(NULL != Head)
 	{
 		temp = Head;
@@ -63,7 +63,6 @@ void SinglyLL<T> :: InsertFirst(T* num)
 {
 	struct GENNODE_SLL<T> *newn = new struct GENNODE_SLL<T>;
 	newn->data = *num;
-	//newn->pData = num;
 	newn->next = NULL;
 	
 	newn->next = Head;
@@ -77,7 +76,7 @@ void SinglyLL<T> :: InsertLast(T* num)
 	struct GENNODE_SLL<T> *newn = new struct GENNODE_SLL<T>;
 	newn->next = NULL;
  	newn->data = *num;
- 	//newn->pData = num;
+ 	
 	if(iSize == 0)
 	{
 		Head = newn;
@@ -107,7 +106,7 @@ void SinglyLL<T> :: InsertAt(T* Num, int iPos)
 	newn = new struct GENNODE_SLL<T>;
 	newn->next = NULL;
 	newn->data = *Num;
- 	//newn->pData = Num;
+ 	
 	if(iPos == 1)
 	{
 		InsertFirst(Num);
@@ -483,7 +482,7 @@ template <class T>
 DoublyLL<T> :: ~DoublyLL()
 {
 	struct GENNODE_DLL<T> *temp = NULL;
-	//cout<<"Inside destructor\n\n";
+	
 	while(NULL != Head)
 	{
 		temp = Head;
@@ -954,7 +953,7 @@ template <class T>
 Stack<T> :: ~Stack()
 {
 	struct GENNODE_STACK<T> *Temp = NULL;
-	std::cout<<"Inside destructor\n\n";
+	
 	while(Head != NULL)
 	{
 		Temp = Head;
@@ -1047,7 +1046,6 @@ template <class T>
 Queue<T> :: ~Queue()	// Destructor
 {
 	struct GENNODE_QUEUE<T> *Temp = NULL;
-	std::cout<<"Inside destructor\n\n";
 	while(Head != NULL)
 	{
 		Temp = Head;

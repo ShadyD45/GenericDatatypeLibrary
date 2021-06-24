@@ -1,7 +1,7 @@
 // main.cpp : This file contains the 'main' function. Program execution begins and ends there.
 // For testing library functions
 
-#include "GenLib.h"
+#include "GenLib.cpp"
 #include<iostream>
 
 using namespace std;
